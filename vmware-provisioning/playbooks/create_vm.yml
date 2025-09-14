@@ -1,1 +1,9 @@
+---
+- name: Provisionar VM en VMware
+  hosts: localhost
+  gather_facts: no
+  collections:
+    - community.vmware
 
+  roles:
+    - role: vmware_vm_provision
